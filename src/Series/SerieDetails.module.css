@@ -1,0 +1,115 @@
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    max-width: 400px;
+    height: 80%;
+    
+}
+
+.movieImage {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+}
+
+.movieDetails {
+    font-size: 1.5rem;
+}
+
+.firstItem {
+    margin-top: 0;
+}
+
+.description {
+    text-align: justify;
+}
+
+.youtubeLogo {
+    width: 50px; 
+    height: auto; 
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .trailerButton {
+    position: absolute;
+    padding: 10px;
+  }
+
+  .trailerButton:hover {
+    opacity: 0.10;
+  }
+
+  .verEnRecuadro {
+    background-color: red;
+  }
+
+  .streamLogo {
+    width: 5rem; 
+    height: 2rem; 
+    position: absolute;
+    margin-top: -44px;
+    margin-left: 18rem;
+  }
+
+  .streamButton {
+    position: relative;
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .containerStream {
+    background-color: aliceblue;
+    max-width: 400px;
+    margin: 15px;
+    height: 80%;
+    border-radius: 15px;
+  }
+
+  .backgroundImage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: blur(5px);
+  opacity: 0.7;
+  height: 115vh;
+  width: 100vw;
+  }
+
+  .containerData {
+    padding: 10px;
+    margin-top: 4%;
+  }
+
+  .unavailableText {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+
+  .streamTextBlack {
+    color: black;
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .hideBackgroundImage {
+      display: none;
+    }
+  }
+ 

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'HighVoltage Heavy Rough';
+  src: url('../src/assets/HighVoltage Heavy Rough.ttf') format('truetype');
+  /* Agrega más formatos de archivo si es necesario */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.title1 {
+  text-align: center;
+    font-size: 2.5rem;
+    padding: 0px 10px 0px 10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0px 10px 0px 10px;
+}
+
+.title1:hover {
+  color: rgb(0, 4, 255);
+ }
+
+.title:hover {
+ color: rgb(0, 4, 255);
+}
+
+.flexContainer {
+  display: inline-block;
+  margin-right: 20px; 
+}
+
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+@media (max-width: 560px) {
+
+  .title1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: -5%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0px 10px 0px 10px;
+}
+  .centerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
