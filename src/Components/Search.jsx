@@ -7,8 +7,8 @@ import { useQuery } from "../hooks/useQuery";
 export function Search() {
   const navigate = useNavigate();
   const query = useQuery();
-  const search = query.get("search");
-  const [inputValue, setInputValue] = useState(search || "");
+  const searchParam = query.get("search");
+  const [inputValue, setInputValue] = useState(searchParam || "");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,9 +23,30 @@ export function Search() {
   };
 
   useEffect(() => {
-    if (inputValue === "") {
-      navigate("/");
+    if (searchParam !== inputValue) {
+      setInputValue(searchParam || "");
     }
+  }, [searchParam]);
+
+  useEffect(() => {
+    let timer = null;
+    
+    const handleInputChange = () => {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        if (inputValue === "") {
+          navigate("/");
+        } else {
+          navigate("/?search=" + inputValue);
+        }
+      }, 500); // Ajusta el tiempo de espera según tus necesidades
+    };
+
+    handleInputChange();
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, [inputValue, navigate]);
 
   return (
@@ -44,3 +65,4 @@ export function Search() {
     </form>
   );
 }
+
