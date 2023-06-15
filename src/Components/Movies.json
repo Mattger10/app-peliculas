@@ -332,5 +332,11 @@
       "poster_path": "/smile1.webp",
       "title": "Smile",
       "genre": ["terror", "misterio", "suspenso"]
+    },
+    {
+      "id": 49,
+      "poster_path": "/Palmer.webp",
+      "title": "Palmer",
+      "genre": ["drama", "recientes"]
     }
   ]

@@ -762,6 +762,20 @@
     "linkStream": "https://www.paramountplus.com/movies/sonrie/Is6H3gLyiCWAsx2FiJwdqb9uroipWVl8/",
     "imageStream": "/paramount.svg",
     "backgroundImage": "/smilebackg.webp"
+  }, 
+  {
+    "movieId": 49,
+    "title": "Palmer.",
+    "poster_path": "/Palmer.webp",
+    "genres": [
+      { "name": "Drama." }
+    ],
+    "released": "29/01/2021",
+    "overview": "Tras 12 años en prisión, el exjugador de fútbol Palmer vuelve a casa para rehacer su vida. Mientras se adapta a su nueva realidad, entabla una amistad con un niño abandonado, pero su pasado le persigue y amenaza con destruir su nueva familia.",
+    "trailerUrl": "https://www.youtube.com/watch?v=syN7mL3B8Z0",
+    "linkStream": "https://tv.apple.com/ar/movie/palmer/umc.cmc.40qrv09i2yfh8iilyi4s8vfi?action=play",
+    "imageStream": "/AppleTv.svg",
+    "backgroundImage": "/Palmer bg.webp"
   }
 
 
