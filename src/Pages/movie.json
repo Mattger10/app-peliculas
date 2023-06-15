@@ -62,7 +62,7 @@
   {
     "movieId": 5,
     "title": "Agente Fortuna: El gran engaño",
-    "poster_path": "/Agente fortuna.webp",
+    "poster_path": "/agente.webp",
     "genres": [
       { "name": "Acción" },
       { "name": "Comedia" },
