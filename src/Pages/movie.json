@@ -11,7 +11,7 @@
     "overview": "Película sobre Gabriele Amorth, un sacerdote que ejerció como exorcista principal del Vaticano, realizando más de cien mil exorcismos a lo largo de su vida. Amorth escribió dos libros de memorias donde detalló sus experiencias luchando contra Satanás.", 
     "trailerUrl": "https://www.youtube.com/watch?v=0-fYeHTqRc4",
     "linkStream": "https://tv.apple.com/ar/movie/the-popes-exorcist/umc.cmc.60ui93d0hdrrzu5tpd1vlhga7?playableId=tvs.sbd.9001%3A1678803325",
-    "imageStream": "/AppleTv.svg",
+    "imageStream": "/Apple.svg",
     "backgroundImage": "/El exorcista del papa bg.webp"
   },
   {
@@ -774,9 +774,21 @@
     "overview": "Tras 12 años en prisión, el exjugador de fútbol Palmer vuelve a casa para rehacer su vida. Mientras se adapta a su nueva realidad, entabla una amistad con un niño abandonado, pero su pasado le persigue y amenaza con destruir su nueva familia.",
     "trailerUrl": "https://www.youtube.com/watch?v=syN7mL3B8Z0",
     "linkStream": "https://tv.apple.com/ar/movie/palmer/umc.cmc.40qrv09i2yfh8iilyi4s8vfi?action=play",
-    "imageStream": "/AppleTv.svg",
+    "imageStream": "/Apple.svg",
     "backgroundImage": "/Palmer bg.webp"
+  },
+  {
+    "movieId": 50,
+    "title": "Creed III",
+    "poster_path": "/Creed33.webp",
+    "genres": [
+      { "name": "Drama." }
+    ],
+    "released": "02/03/2023",
+    "overview": "Después de dominar el mundo del boxeo, Adonis Creed ha prosperado tanto en su carrera como en su vida familiar. Cuando un amigo de la infancia y ex prodigio de boxeo, Damien Anderson, resurge después de cumplir una larga sentencia en prisión, está ansioso por demostrar que merece su disparo en el ring. El enfrentamiento entre los antiguos amigos es más que una pelea. Para resolver el puntaje, Adonis debe poner su futuro en la línea para luchar contra Damien, un luchador que no tiene nada que perder.",
+    "trailerUrl": "https://www.youtube.com/embed/wfkPipmascA",
+    "linkStream": "https://www.primevideo.com/dp/amzn1.dv.gti.b2ac0356-dbd2-4d0b-9840-4d627e72d8bc?autoplay=0&ref_=atv_cf_strg_wb",
+    "imageStream": "/primevideo.svg",
+    "backgroundImage": "/Creed3bg.webp"
   }
-
-
 ]

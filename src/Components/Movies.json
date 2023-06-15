@@ -67,7 +67,7 @@
       "original_title": "",
       "poster_path": "/La chica salvaje.webp",
       "title": "La chica salvaje",
-      "genre": ["misterio", "drama", "suspenso"]
+      "genre": ["misterio", "drama", "suspenso", "recientes"]
     },
     {
       "id": 10,
@@ -121,7 +121,7 @@
       "id": 21,
       "poster_path": "/Rápidos y furiosos X.webp",
       "title": "Rápidos y furiosos 10",
-      "genre": ["acción", "aventura", "crimen"]
+      "genre": ["acción", "aventura", "crimen", "recientes"]
     },
     {
       "id": 14,
@@ -145,7 +145,7 @@
       "id": 22,
       "poster_path": "/Tin & Tina.webp",
       "title": "Tin & Tina",
-      "genre": ["terror", "suspenso"]
+      "genre": ["terror", "suspenso", "recientes"]
     },
     {
       "id": 25,
@@ -307,7 +307,7 @@
       "id": 45,
       "poster_path": "/Top Gun 2.webp",
       "title": "Top Gun: Maverick ",
-      "genre": ["acción", "drama"]
+      "genre": ["acción", "drama", "recientes"]
     },
     {
       "id": 46,
@@ -331,12 +331,18 @@
       "original_title": "",
       "poster_path": "/smile1.webp",
       "title": "Smile",
-      "genre": ["terror", "misterio", "suspenso"]
+      "genre": ["terror", "misterio", "suspenso", "recientes"]
     },
     {
       "id": 49,
       "poster_path": "/Palmer.webp",
       "title": "Palmer",
       "genre": ["drama", "recientes"]
+    },
+    {
+      "id": 50,
+      "poster_path": "/Creed3.webp",
+      "title": "Creed III",
+      "genre": ["drama", "acción", "recientes"]
     }
   ]

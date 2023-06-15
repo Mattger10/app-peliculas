@@ -101,21 +101,7 @@ export function MovieDetails() {
             {selectedMovie.overview}
           </p>
 
-          <a href={trailerUrl} target="_blank" rel="noopener noreferrer">
-            <img
-              className={styles.youtubeLogo}
-              src={youtube}
-              alt="YouTube Logo"
-            />
-          </a>
-          <a
-            className={styles.trailerButton}
-            href={trailerUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver tráiler en YouTube
-          </a>
+          <iframe width="560" height="315" src={trailerUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
     </div>

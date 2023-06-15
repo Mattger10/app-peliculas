@@ -25,11 +25,11 @@
   z-index: 1;
   margin-left: 0.5rem;
   margin-top: 1rem;
-  width: 8rem;
   max-width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
   border-radius: 5px;
+  width: calc(18% - 2.5rem);
 }
 
 .button:hover {
@@ -41,8 +41,9 @@
 }
 
 .buttonBorders {
-  padding: 10px;
+  padding: 10px 100px 0px 100px;
   margin-left: 2rem;
+
 }
 
 @media (max-width: 560px) {

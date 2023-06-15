@@ -84,6 +84,7 @@ export function MoviesGrid() {
     <div>
       <div className={styles.buttonBorders}>
       <button className={styles.button} onClick={() => {setSelectedGenre("");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Todos</button>
+      <button className={styles.button} onClick={() => {setSelectedGenre("recientes");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Recientes</button>
       <button className={styles.button} onClick={() => {setSelectedGenre("acción");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Acción</button>
       <button className={styles.button} onClick={() => {setSelectedGenre("aventura");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Aventura</button>
       <button className={styles.button} onClick={() => {setSelectedGenre("animación");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Animación</button>
