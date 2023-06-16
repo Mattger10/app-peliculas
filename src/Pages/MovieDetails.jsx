@@ -94,7 +94,7 @@ export function MovieDetails() {
           src={imageUrl}
           alt={selectedMovie.title}
         />
-        <a
+        <a style={{ fontFamily: 'KGRedHands' }}
           className={`${styles.streamButton} ${
             !linkStream && !imageStream
               ? styles.unavailableText

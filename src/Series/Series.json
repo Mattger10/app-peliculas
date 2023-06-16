@@ -1,8 +1,8 @@
 [
     {
       "id": 1,
-      "poster_path": "https://firebasestorage.googleapis.com/v0/b/salvandohuellas.appspot.com/o/App%20pel%C3%ADculas%2FSweet%20Tooth%202.jpeg?alt=media&token=d27b025d-384d-4479-9008-28d949fefcfc",
+      "poster_path": "/SweetTooth2.webp",
       "title": "Sweet Tooth: Temporada 2",
-      "genre": "acción"
+      "genre": ["drama", "ciencia ficción", "fantasía"]
     }
   ]

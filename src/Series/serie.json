@@ -2,7 +2,7 @@
 {
     "serieId": 1,
     "title": "Sweet Tooth: Temporada 2",
-    "poster_path": "/sweettooth.jpg",
+    "poster_path": "/SweetTooth22.webp",
     "genres": [
       { "name": "Drama" },
       { "name": "Ciencia ficción" },
@@ -10,10 +10,10 @@
     ],
     "released": "27/04/2023",
     "overview": "Un cataclismo ha devastado el mundo. Gus, mitad chico y mitad ciervo, se une a una variopinta familia de niños híbridos como él para buscar respuestas a lo ocurrido.", 
-    "trailerUrl": "https://www.youtube.com/watch?v=WgNh5jFMYoU",
+    "trailerUrl": "https://www.youtube.com/embed/WgNh5jFMYoU",
     "linkStream": "https://www.netflix.com/ar/title/81221380?source=35",
     "imageStream": "/netflix.svg",
-    "backgroundImage": "/sweettoothbg.png"
+    "backgroundImage": "/SweetTooth2bg.webp"
   },
   {
     "serieId": 2,
