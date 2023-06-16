@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'KGRedHands';
-  src: url('../assets/KGRedHands.ttf') format('truetype');
-  /* Agrega más formatos de archivo si es necesario */
-  font-weight: normal;
-  font-style: normal;
-}
-
 .detailsContainer {
   display: flex;
   justify-content: center;
@@ -121,8 +113,7 @@
   color: black;
 }
 
-
-  .containerModal {
+  .modalContent {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -148,8 +139,8 @@
 
 .buttonX {
   position: absolute;
-  margin-top: 1rem;
-  margin-left: -2rem;
+  margin-top: -45rem;
+  margin-left: 85rem;
   z-index: 3;
   border: none;
   background: none;
@@ -165,8 +156,8 @@
 
 .pTrailer {
   position: absolute;
-  margin-top: -48rem;
-  margin-left: 1rem;
+  margin-top: -44rem;
+  margin-left: -77rem;
   z-index: 4;
   border: none;
   background: none;
@@ -272,7 +263,7 @@
     justify-content: flex-start;
     font-size: 25px;
     font-weight: bold;
-    margin-left: 0rem;
+    margin-left: 2rem;
   }
 
   .containerStream {
@@ -311,8 +302,8 @@
     width: 21.1rem;
     height: 17rem;
     z-index: 10;
-    top: 15rem;
-    left: 0.5rem;
+    top: 22rem;
+    left: 11.2rem;
     right: 0rem;
     bottom: 0;
   }
@@ -322,28 +313,29 @@
     z-index: 11;
     width: 21.1rem;
     height: 15rem;
-    top: 14rem;
-    left: 0.5rem;
+    top: -1rem;
+    left: 0rem;
     right: 0;
     bottom: 0;
   }
 
   .buttonX {
     position: fixed;
-    margin-top: 0.5rem;
+    margin-top: -15rem;
     margin-left: 19rem;
     z-index: 13;
     border: none;
     background: none;
     color: rgb(255, 255, 255);
     font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
   }
 
   .pTrailer {
     position: fixed;
-  margin-top: 0.4rem;
-  margin-left: 0.5rem;
+  margin-top: -14.2rem;
+  margin-left: -12rem;
   z-index: 12;
   border: none;
   background: none;
