@@ -173,7 +173,8 @@ html {
     text-align: center;
     font-size: 2.5rem;
     padding: 0px 10px 0px 10px;
-    color: rgba(248, 4, 4, 0.87);
+    color: rgba(254, 254, 254, 0.87);
+    left: -5.6rem;
     margin-left: -8rem;
     margin-top: 0.5rem;
     z-index: 2;
