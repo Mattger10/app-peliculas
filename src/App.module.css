@@ -1,36 +1,136 @@
 @font-face {
-  font-family: 'HighVoltage Heavy Rough';
-  src: url('../src/assets/HighVoltage Heavy Rough.ttf') format('truetype');
+  font-family: "HighVoltage Heavy Rough";
+  src: url("../src/assets/HighVoltage Heavy Rough.ttf") format("truetype");
   /* Agrega más formatos de archivo si es necesario */
   font-weight: normal;
   font-style: normal;
 }
 
+.buttonDark {
+  position: absolute;
+  margin-left: 75rem;
+  margin-top: -1.5rem;
+}
+
+.label {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.label::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5.6px;
+  left: 9px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.input:checked + .label {
+  background: #242424;
+}
+
+.input:checked + .label::after {
+  left: 90px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.input:active::after {
+  width: 260px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.darkApp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.725);
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.title1Dark {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0px 10px 0px 10px;
+  color: rgba(254, 254, 254, 0.87);
+  margin-left: -60rem;
+  z-index: 2;
+}
 
 .title1 {
   text-align: center;
-    font-size: 2.5rem;
-    padding: 0px 10px 0px 10px;
+  font-size: 2.5rem;
+  padding: 0px 10px 0px 10px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: -60rem;
+  z-index: 2;
+}
+
+.titleDark {
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0px 10px 0px 10px;
+  color: rgba(254, 254, 254, 0.87);
+  left: -25rem;
+  z-index: 1;
 }
 
 .title {
-    text-align: center;
-    font-size: 2.5rem;
-    padding: 0px 10px 0px 10px;
+  position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0px 10px 0px 10px;
+  color: rgba(0, 0, 0, 0.87);
+  left: -25rem;
+  z-index: 1;
 }
 
 .title1:hover {
   color: rgb(0, 4, 255);
- }
+}
 
 .title:hover {
- color: rgb(0, 4, 255);
+  color: rgb(0, 4, 255);
 }
 
-.flexContainer {
-  display: inline-block;
-  margin-right: 20px; 
+.title1Dark:hover {
+  color: rgb(0, 4, 255);
 }
+
+.titleDark:hover {
+  color: rgb(0, 4, 255);
+}
+
+
 
 .centerContainer {
   display: flex;
@@ -40,19 +140,45 @@
 }
 
 @media (max-width: 560px) {
-
   .title1 {
     text-align: center;
     font-size: 2.5rem;
     padding: 0px 10px 0px 10px;
-    margin-bottom: -5%;
+    margin-left: -8rem;
+    margin-top: 0.5rem;
+    z-index: 2;
   }
 
   .title {
     text-align: center;
     font-size: 2.5rem;
     padding: 0px 10px 0px 10px;
-}
+    left: -5.6rem;
+    top: -3rem;
+    z-index: 1;
+    margin-bottom: 1rem;
+  }
+
+  .titleDark {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0px 10px 0px 10px;
+    color: rgba(254, 254, 254, 0.87);
+    left: -5.6rem;
+    top: -3rem;
+    z-index: 1;
+  }
+
+  .title1Dark {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0px 10px 0px 10px;
+    color: rgba(248, 4, 4, 0.87);
+    margin-left: -8rem;
+    margin-top: 0.5rem;
+    z-index: 2;
+  }
+
   .centerContainer {
     display: flex;
     flex-direction: column;
@@ -60,5 +186,31 @@
     align-items: center;
     margin-left: 10px;
   }
-}
 
+  .buttonDark {
+    position: absolute;
+    margin-left: 14rem;
+    margin-top: -10rem;
+  }
+
+  .label {
+    width: 80px;
+    height: 40px;
+    position: relative;
+  }
+
+  .label::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 9px;
+  }
+
+  .input:checked + .label::after {
+    left: 70px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+  }
+}

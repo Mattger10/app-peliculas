@@ -333,7 +333,7 @@
   }
 
   .pTrailer {
-    position: fixed;
+  position: fixed;
   margin-top: -14.2rem;
   margin-left: -12rem;
   z-index: 12;

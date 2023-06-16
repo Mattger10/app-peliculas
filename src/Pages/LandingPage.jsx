@@ -4,6 +4,7 @@ import { useQuery } from "../hooks/useQuery";
 import { SeriesGrid } from "../Series/SeriesGrid";
 
 
+
 export function LandingPage () {
     const query = useQuery();
     const search = query.get("search");
