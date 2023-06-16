@@ -4,10 +4,17 @@ import { useParams } from "react-router-dom";
 import styles from "./MovieDetails.module.css";
 import { Spinner } from "../Components/Spinner";
 import youtube from "../assets/logoyoutube.webp";
+import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 
 export function MovieDetails() {
   const { movieId } = useParams();
   const [isLoading, setIsLoading] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isTrailerPlaying, setIsTrailerPlaying] = useState(false);
+
+  const handlePlayTrailer = () => {
+    setIsTrailerPlaying(true);
+  };
 
   useEffect(() => {
     setIsLoading(true);
@@ -47,8 +54,31 @@ export function MovieDetails() {
     streamText = "Ver online en:";
   }
 
+  const Modal = ({ onClose, children }) => {
+    const handleClose = () => {
+      onClose();
+      setIsTrailerPlaying(false);
+    };
+
+    return (
+      <div className={styles.modal}>
+        <div className={styles.modalContent}>
+          {children}
+          <button className={styles.buttonX} onClick={handleClose}>
+            X
+          </button>
+          <p className={styles.pTrailer}>Reproducir trailer</p>
+        </div>
+      </div>
+    );
+  };
+
   return (
-    <div className={styles.detailsContainer}>
+    <div
+      className={`${styles.detailsContainer} ${
+        isTrailerPlaying ? styles.darkBackground : ""
+      }`}
+    >
       <div
         className={`${styles.backgroundImage} ${styles.hideBackgroundImage}`}
       >
@@ -100,8 +130,33 @@ export function MovieDetails() {
             <strong>Descripción: </strong>
             {selectedMovie.overview}
           </p>
+          <PlayCircleIcon fontSize="large" />
+          <div>
+            <button
+              className={styles.verTrailerButton}
+              onClick={() => {
+                setIsModalOpen(true);
+                handlePlayTrailer();
+              }}
+            >
+              Reproducir trailer
+            </button>
+          </div>
 
-          <iframe width="560" height="315" src={trailerUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          {isModalOpen && (
+            <div className={styles.containerModal}>
+              <Modal onClose={() => setIsModalOpen(false)}>
+                <iframe
+                  className={styles.modalVideo}
+                  src={trailerUrl}
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </Modal>
+            </div>
+          )}
         </div>
       </div>
     </div>

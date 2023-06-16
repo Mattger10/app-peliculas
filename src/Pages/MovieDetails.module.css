@@ -1,87 +1,86 @@
-
 .detailsContainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0;
 }
 
+
+
 .column {
-    max-width: 800px;
-    height: 80%;
+  max-width: 800px;
 }
 
 .movieImage {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  max-width: 450px;
 }
 
 .containerStream {
   background-color: aliceblue;
-  max-width: 400px;
+  max-width: 450px;
   margin: 15px;
   height: 80%;
   border-radius: 15px;
+  margin-bottom: 1rem;
 }
 
 .movieDetails {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .firstItem {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .description {
-    text-align: justify;
+  text-align: justify;
+  margin-bottom: 4rem;
 }
 
 .youtubeLogo {
-    width: 50px; 
-    height: auto; 
-    position: relative;
-    margin-top: 10px;
-  }
+  width: 50px;
+  height: auto;
+  position: relative;
+  margin-top: 10px;
+}
 
-  .trailerButton {
-    position: absolute;
-    padding: 10px;
-  }
+.trailerButton {
+  position: absolute;
+  padding: 10px;
+}
 
-  .trailerButton:hover {
-    opacity: 0.10;
-  }
+.trailerButton:hover {
+  opacity: 0.1;
+}
 
-  .verEnRecuadro {
-    background-color: red;
-  }
+.verEnRecuadro {
+  background-color: red;
+}
 
-  .streamLogo {
-    width: 5rem; 
-    height: 2rem; 
-    position: absolute;
-    margin-top: -44px;
-    margin-left: 18rem;
-  }
+.streamLogo {
+  width: 5rem;
+  height: 2rem;
+  position: absolute;
+  margin-top: -44px;
+  margin-left: 18rem;
+}
 
-  .streamButton {
-    position: relative;
-    padding: 10px;
-    color: black;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 1rem;
-    margin-top: -1px;
-    
-  }
+.streamButton {
+  position: relative;
+  padding: 10px;
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-top: -1px;
+}
 
-  
-
-  .backgroundImage {
+.backgroundImage {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,12 +94,186 @@
   opacity: 0.5;
   height: 100vh;
   width: 100vw;
+}
+
+.containerData {
+  padding: 10px;
+  margin-left: 2rem;
+  margin-top: 0rem;
+}
+
+.unavailableText {
+  color: red;
+  display: flex;
+  justify-content: center;
+  margin-left: -1rem;
+}
+
+.streamTextBlack {
+  color: black;
+}
+
+.containerModal {
+  position: relative;
+  background-color: rgb(255, 0, 0);
+  margin-top: -25rem;
+  margin-left: -37rem;
+  width: 90rem;
+  height: 48rem;
+  z-index: 1;
+}
+
+.modalVideo {
+  margin-top: 3rem;
+  margin-left: 0rem;
+  width: 90rem;
+  height: 45rem;
+  position: relative;
+  z-index: 2;
+}
+
+.buttonX {
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: -2rem;
+  z-index: 3;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.buttonX:hover {
+  background-color: rgb(45, 45, 45);
+  border-radius: 2px;
+}
+
+.pTrailer {
+  position: absolute;
+  margin-top: -48rem;
+  margin-left: 1rem;
+  z-index: 4;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: auto;
+}
+
+.verTrailerButton {
+  position: absolute;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -2.1rem;
+  margin-left: 2.5rem;
+  cursor: pointer;
+}
+
+.verTrailerButton:hover {
+  opacity: 0.6;
+}
+
+.trailerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* .containerModal {
+  position: fixed;
+} */
+
+@media (max-width: 768px) {
+  .hideBackgroundImage {
+    display: none;
+  }
+  .detailsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    max-width: 400px;
+    height: 80%;
+  }
+
+  .movieImage {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+    width: 21rem;
+  }
+
+  .movieDetails {
+    font-size: 1.5rem;
+  }
+
+  .firstItem {
+    margin-top: 0;
+  }
+
+  .description {
+    text-align: inherit;
+  }
+
+  .youtubeLogo {
+    width: 50px;
+    height: auto;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .trailerButton {
+    position: absolute;
+    padding: 10px;
+  }
+
+  .trailerButton:hover {
+    opacity: 0.1;
+  }
+
+  .verEnRecuadro {
+    background-color: red;
+  }
+
+  .streamLogo {
+    width: 5rem;
+    height: 2rem;
+    position: absolute;
+    margin-top: -44px;
+    margin-left: 14rem;
+  }
+
+  .streamButton {
+    position: relative;
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 2rem;
+  }
+
+  .containerStream {
+    background-color: aliceblue;
+    max-width: 400px;
+    margin: 15px;
+    height: 80%;
+    border-radius: 15px;
+    width: 21rem;
   }
 
   .containerData {
     padding: 10px;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    margin-top: 4%;
+    margin-left: 0rem;
   }
 
   .unavailableText {
@@ -113,109 +286,56 @@
   .streamTextBlack {
     color: black;
   }
-  
-  
 
-  @media (max-width: 768px) {
-    .hideBackgroundImage {
-      display: none;
-    }
-    .detailsContainer {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-  }
-  
-  .column {
-      max-width: 400px;
-      height: 80%;
-      
-  }
-  
-  .movieImage {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-      width: 21rem;
-  }
-  
-  .movieDetails {
-      font-size: 1.5rem;
-  }
-  
-  .firstItem {
-      margin-top: 0;
-  }
-  
-  .description {
-      text-align:inherit;
-  }
-  
-  .youtubeLogo {
-      width: 50px; 
-      height: auto; 
-      position: relative;
-      margin-top: 10px;
-    }
-  
-    .trailerButton {
-      position: absolute;
-      padding: 10px;
-    }
-  
-    .trailerButton:hover {
-      opacity: 0.10;
-    }
-  
-    .verEnRecuadro {
-      background-color: red;
-    }
-  
-    .streamLogo {
-      width: 5rem; 
-      height: 2rem; 
-      position: absolute;
-      margin-top: -44px;
-      margin-left: 14rem;
-    }
-  
-    .streamButton {
-      position: relative;
-      padding: 10px;
-      color: black;
-      display: flex;
-      justify-content: flex-start;
-      font-size: 25px;
-      font-weight: bold;
-      margin-left: 2rem;
-    }
-  
-    .containerStream {
-      background-color: aliceblue;
-      max-width: 400px;
-      margin: 15px;
-      height: 80%;
-      border-radius: 15px;
-      width: 21rem;
-    }
-  
-    .containerData {
-      padding: 10px;
-      margin-top: 4%;
-      margin-left: 0rem;
-    }
-  
-    .unavailableText {
-      color: red;
-      display: flex;
-      justify-content: center;
-      margin-left: -1rem;
-    }
-  
-    .streamTextBlack {
-      color: black;
-    }
-    
+ .containerModal {
+  position: fixed;
+ }
 
+  .modalContent {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 21.1rem;
+    height: 17rem;
+    z-index: 10;
+    top: 15rem;
+    left: 0.5rem;
+    right: 0rem;
+    bottom: 0;
   }
- 
+  
+  .modalVideo {
+    position: fixed;
+    z-index: 11;
+    width: 21.1rem;
+    height: 15rem;
+    top: 14rem;
+    left: 0.5rem;
+    right: 0;
+    bottom: 0;
+  }
+
+  .buttonX {
+    position: fixed;
+    margin-top: 0.5rem;
+    margin-left: 19rem;
+    z-index: 13;
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .pTrailer {
+    position: fixed;
+  margin-top: 0.4rem;
+  margin-left: 0.5rem;
+  z-index: 12;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: auto;
+  }
+}
