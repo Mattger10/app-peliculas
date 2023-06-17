@@ -121,7 +121,6 @@
   opacity: 0;
   transition: opacity 1s ease;
   z-index: -999;
-  
 }
 
 .visible {
@@ -204,11 +203,20 @@
   z-index: 999;
 }
 
+.backgroundImageMobile {
+  
+}
+
 /* .containerModal {
   position: fixed;
 } */
 
 @media (max-width: 768px) {
+
+  .backgroundImageMobile {
+    
+  }
+
   .hideBackgroundImage {
     display: none;
   }

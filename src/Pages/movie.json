@@ -75,7 +75,7 @@
     "linkStream": "https://www.primevideo.com/dp/amzn1.dv.gti.3b797ef0-dd9d-49fd-b17e-1433e601589a?autoplay=0&ref_=atv_cf_strg_wb",
     "imageStream": "/primevideo.svg",
     "backgroundImage": "/agentefortune.webp",
-    "localVideoPath": "agentefortune.mkv"
+    "backgroundImageMobile": "/Agente Fortuna mobile.webp"
   },
   {
     "movieId": 6,
@@ -91,7 +91,8 @@
     "trailerUrl": "https://www.youtube.com/embed/R8HZeYfJnNU",
     "linkStream": "https://www.netflix.com/ar/title/80242619?source=35",
     "imageStream": "/netflix.svg",
-    "backgroundImage": "/Misterio a bordo bg.webp"
+    "backgroundImage": "/Misterio a bordo bg.webp",
+    "backgroundImageMobile": "/Misterio a bordo.webp"
   },
   {
     "movieId": 7,
@@ -167,7 +168,8 @@
     "trailerUrl": "https://www.youtube.com/embed/51S4llUG5QM",
     "linkStream": "https://www.disneyplus.com/es-419/movies/ant-man-and-the-wasp-quantumania/7OLRMMgd1vkx",
     "imageStream": "/disney.svg",
-    "backgroundImage": "/antman2bg.webp"
+    "backgroundImage": "/antman2bg.webp",
+    "backgroundImageMobile": "/antman2mobile.webp"
   },
   {
     "movieId": 12,
@@ -248,7 +250,8 @@
     "trailerUrl": "https://www.youtube.com/embed/HlB_8y3cmUg",
     "linkStream": "https://www.disneyplus.com/es-419/video/6e3d316b-778f-4050-ad1a-daef6cba38d8?distributionPartner=google",
     "imageStream": "/disney.svg",
-    "backgroundImage": "/blackwidowbg.webp"
+    "backgroundImage": "/blackwidowbg.webp",
+    "backgroundImageMobile": "/blackwidowmobile.webp"
   },
   {
     "movieId": 17,
@@ -568,7 +571,8 @@
     "trailerUrl": "https://www.youtube.com/embed/mfB47nwyg3M",
     "linkStream": "https://www.disneyplus.com/es-419/movies/ant-man-el-hombre-hormiga-de-marvel-studios/5c92KVf1zgUX",
     "imageStream": "/disney.svg",
-    "backgroundImage": "/Ant Man 1 bg.webp"
+    "backgroundImage": "/Ant Man 1 bg.webp",
+    "backgroundImageMobile": "/Ant man 1 mobile color.webp"
   },
   {
     "movieId": 37,
@@ -668,7 +672,8 @@
     "trailerUrl": "https://www.youtube.com/embed/wp_QaWgfZDc",
     "linkStream": "https://www.disneyplus.com/es-419/movies/pantera-negra/1GuXuYPj99Ke",
     "imageStream": "/disney.svg",
-    "backgroundImage": "/Black Panther 1 bg.webp"
+    "backgroundImage": "/Black Panther 1 bg.webp",
+    "backgroundImageMobile": "/blackpanthermobile.webp"
   },
   {
     "movieId": 43,
@@ -790,7 +795,8 @@
     "trailerUrl": "https://www.youtube.com/embed/wfkPipmascA",
     "linkStream": "https://www.primevideo.com/dp/amzn1.dv.gti.b2ac0356-dbd2-4d0b-9840-4d627e72d8bc?autoplay=0&ref_=atv_cf_strg_wb",
     "imageStream": "/primevideo.svg",
-    "backgroundImage": "/Creed3bg.webp"
+    "backgroundImage": "/Creed3bg.webp",
+    "backgroundImageMobile": "/Misión de rescate 22.webp"
   },
   {
     "movieId": 51,
@@ -805,6 +811,7 @@
     "trailerUrl": "https://www.youtube.com/embed/3j_SErnxepk",
     "linkStream": "https://www.netflix.com/ar/title/81098494?source=35",
     "imageStream": "/netflix.svg",
-    "backgroundImage": "/Mision de rescate 2 bg.webp"
+    "backgroundImage": "/Mision de rescate 2 bg.webp",
+    "backgroundImageMobile": "/prueba.jpg"
   }
 ]
