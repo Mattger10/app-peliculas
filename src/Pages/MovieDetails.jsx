@@ -94,7 +94,8 @@ export function MovieDetails() {
           src={imageUrl}
           alt={selectedMovie.title}
         />
-        <a style={{ fontFamily: 'KGRedHands' }}
+        <a
+          style={{ fontFamily: "KGRedHands" }}
           className={`${styles.streamButton} ${
             !linkStream && !imageStream
               ? styles.unavailableText
@@ -142,9 +143,13 @@ export function MovieDetails() {
               Reproducir trailer
             </p>
           </div>
-
-          {isModalOpen && (
-            <div className={styles.containerModal}>
+          <div
+            className={`${styles.containerModal} ${
+              isModalOpen ? styles.visible : ""
+            }`}
+            onClick={() => setIsModalOpen(false)}
+          >
+            {isModalOpen && (
               <Modal onClose={() => setIsModalOpen(false)}>
                 <iframe
                   className={styles.modalVideo}
@@ -155,8 +160,8 @@ export function MovieDetails() {
                   allowfullscreen
                 ></iframe>
               </Modal>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
     </div>

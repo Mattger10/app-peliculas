@@ -8,7 +8,7 @@
   {
     "id": 11,
     "poster_path": "Ant man & whasp.webp",
-    "title": "Ant-Man y la Avispa: Quantumanía",
+    "title": "Ant-Man & The Whasp: Quantumanía",
     "genre": ["acción", "aventura", "ciencia ficción", "marvel"]
   },  
   {
@@ -344,5 +344,11 @@
       "poster_path": "/Creed3.webp",
       "title": "Creed III",
       "genre": ["drama", "acción", "recientes"]
+    },
+    {
+      "id": 51,
+      "poster_path": "/Misión de rescate 2.webp",
+      "title": "Misión de rescate 2",
+      "genre": ["suspenso", "acción", "recientes"]
     }
   ]

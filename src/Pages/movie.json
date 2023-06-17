@@ -74,7 +74,8 @@
     "trailerUrl": "https://www.youtube.com/embed/er6X4MhiNNc",
     "linkStream": "https://www.primevideo.com/dp/amzn1.dv.gti.3b797ef0-dd9d-49fd-b17e-1433e601589a?autoplay=0&ref_=atv_cf_strg_wb",
     "imageStream": "/primevideo.svg",
-    "backgroundImage": "/agentefortune.webp"
+    "backgroundImage": "/agentefortune.webp",
+    "localVideoPath": "agentefortune.mkv"
   },
   {
     "movieId": 6,
@@ -790,5 +791,20 @@
     "linkStream": "https://www.primevideo.com/dp/amzn1.dv.gti.b2ac0356-dbd2-4d0b-9840-4d627e72d8bc?autoplay=0&ref_=atv_cf_strg_wb",
     "imageStream": "/primevideo.svg",
     "backgroundImage": "/Creed3bg.webp"
+  },
+  {
+    "movieId": 51,
+    "title": "Misión de rescate 2",
+    "poster_path": "/Misión de rescate 22.webp",
+    "genres": [
+      { "name": "Acción" },
+      { "name": "Suspenso." }
+    ],
+    "released": "16/06/2023",
+    "overview": "En 2020, el mundo conoció a un nuevo héroe: Tyler Rake, un intrépido mercenario del mercado negro que se embarca en la misión más mortífera de su carrera. Pero lo que parece perdido... todavía se puede extraer.",
+    "trailerUrl": "https://www.youtube.com/embed/3j_SErnxepk",
+    "linkStream": "https://www.netflix.com/ar/title/81098494?source=35",
+    "imageStream": "/netflix.svg",
+    "backgroundImage": "/Mision de rescate 2 bg.webp"
   }
 ]
