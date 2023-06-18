@@ -43,6 +43,7 @@
 .buttonBorders {
   padding: 10px 100px 0px 100px;
   margin-left: 2rem;
+  margin-top: 2rem;
 
 }
 
@@ -57,11 +58,11 @@
 
   .buttonBorders {
     padding: 10px;
-    margin-left: 1.9rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: -0.5rem;
+    margin-top: 1rem;
   }
 
   .button {

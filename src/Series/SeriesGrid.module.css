@@ -9,6 +9,6 @@
 @media (max-width: 560px) {
     .seriesGrid{
         grid-template-columns: 100%;
-        margin-top: -5rem;
+        margin-top: 0rem;
     }
 }

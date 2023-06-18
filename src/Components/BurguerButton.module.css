@@ -1,0 +1,53 @@
+.navIcon6{
+    width: 35px;
+    height: 30px;
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .navIcon6 .span{
+    background-color:#fff;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:100%;
+    height: 4px;
+  }
+  .navIcon6 .span:nth-child(1){
+    top:0px;
+    left: 0px;
+  }
+  .navIcon6 .span:nth-child(2){
+    top:13px;
+    left: 0px;
+  }
+  .navIcon6 .span:nth-child(3){
+    bottom:0px;
+    left: 0px;
+  }
+  .navIcon6:not(.open):hover .span:nth-child(1){
+    transform:  scaleY(1.2);
+    left: -5px;
+  }
+  .navIcon6:not(.open):hover .span:nth-child(2){
+    transform: rotate(5deg) scaleY(1.1);
+  }
+  .navIcon6:not(.open):hover .span:nth-child(3){
+    transform:  scaleY(1.2);
+    left: 5px;
+  }
+  .navIcon6.open .span:nth-child(1){
+    transform: rotate(45deg) scaleX(0.7);
+    top: 13PX;
+    left: -8px;
+  }
+  .navIcon6.open .span:nth-child(2){
+    transform: scale(0);
+    transition-duration: 50ms
+  }
+  .navIcon6.open .span:nth-child(3){
+    transform: rotate(-45deg) scaleX(0.7);
+    top: 13PX;
+    left: 7px;
+  }

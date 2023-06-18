@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import { Spinner } from "./Spinner";
 import { useQuery } from "../hooks/useQuery";
 import { Empty } from "./Empty";
+import { NavBar } from "./NavBar";
 
 export function MoviesGrid() {
   const [filteredMovies, setFilteredMovies] = useState([]);

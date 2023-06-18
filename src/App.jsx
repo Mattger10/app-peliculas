@@ -6,6 +6,7 @@ import { LandingPage } from "./Pages/LandingPage";
 import { SeriesGrid } from "./Series/SeriesGrid";
 import { SerieDetails } from "./Series/SerieDetails";
 import { Search } from "./Components/Search";
+import { NavBar } from "./Components/NavBar";
 
 export function App() {
   const [showSeriesGrid, setShowSeriesGrid] = useState(false);
@@ -17,9 +18,13 @@ export function App() {
 
   return (
     <div className={darkMode ? styles.darkApp : styles.app}>
+      <div className={styles.navBar}>
+      <NavBar/>
+
+      </div>
       <Router>
         <header className={styles.centerContainer}>
-          <Link to="/" >
+          {/* <Link to="/" >
             <h1
               style={{ fontFamily: "HighVoltage Heavy Rough" }}
               className={darkMode ? styles.title1Dark : styles.title1}
@@ -38,7 +43,7 @@ export function App() {
             >
               SERIES
             </h1>
-          </Link>
+          </Link> */}
          
       <div className={styles.buttonDark}>
       <input className={styles.input} type="checkbox" id="darkmode-toggle" />
