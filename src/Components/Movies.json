@@ -10,12 +10,14 @@
     "poster_path": "Ant man & whasp.webp",
     "title": "Ant-Man & The Whasp: Quantumanía",
     "genre": ["acción", "aventura", "ciencia ficción", "marvel"]
+
   },  
   {
     "id": 16,
     "poster_path": "/Black Widow.webp",
     "title": "Black Widow",
     "genre": ["acción", "aventura", "ciencia ficción", "marvel"]
+
   },
   {
     "id": 2,
@@ -28,12 +30,14 @@
     "poster_path": "/desde mi cielo.webp",
     "title": "Desde mi cielo",
     "genre": ["fantasía", "drama"]
+
   },
   {
     "id": 9,
     "poster_path": "/El ángel 2.webp",
     "title": "El Ángel",
     "genre": ["crimen", "drama"]
+
   },
     {
       "id": 1,
@@ -41,6 +45,7 @@
       "title": "El exorcista del papa",
       "video": false,
       "genre": ["terror", "suspenso"]
+
     },
     {
       
@@ -48,6 +53,7 @@
       "poster_path": "/Escuadrón suicida 2.webp",
       "title": "Escuadrón suicida 2",
       "genre": ["acción", "comedia", "aventura"]
+
     },
     
     {
@@ -55,97 +61,115 @@
       "poster_path": "/John Wick 4.webp",
       "title": "John Wick 4",
       "genre": ["acción", "suspenso", "crimen"]
+
     },
     {
       "id": 13,
       "poster_path": "/Justicia Implacable.webp",
       "title": "Justicia Implacable",
       "genre": ["acción", "aventura", "crimen", "suspenso"]
+
     },
     {
       "id": 24,
       "original_title": "",
       "poster_path": "/La chica salvaje.webp",
       "title": "La chica salvaje",
-      "genre": ["misterio", "drama", "suspenso", "recientes"]
+      "genre": ["misterio", "drama", "suspenso", "recientes"],
+      "carruselImg": "/La chica salvaje.png"
+
     },
     {
       "id": 10,
       "poster_path": "/La extorsión.webp",
       "title": "La extorsión",
       "genre": ["suspenso", "crimen"]
+
     },
     {
       "id": 17,
       "poster_path": "/La liga de la justicia.webp",
       "title": "La Liga de la Justicia de Zack Snyder's",
       "genre": ["acción", "aventura", "fantasía"]
+
     },
     {
       "id": 6,
       "poster_path": "/Misterio a bordo.webp",
       "title": "Misterio a bordo",
       "genre": ["acción", "comedia", "misterio"]
+
     },
     {
       "id": 7,
       "poster_path": "/Misterio a la vista.webp",
       "title": "Misterio a la vista",
       "genre": ["comedia", "crimen"]
+
     },
     {
       "id": 18,
       "poster_path": "/No respires 2.webp",
       "title": "No respires 2",
       "genre": ["suspenso", "terror"]
+
     },
     {
       "id": 8,
       "poster_path": "/Novia fugitiva.webp",
       "title": "Novia Fugitiva",
       "genre": ["comedia", "romance"]
+
     },
     {
       "id": 4,
       "poster_path": "/Posesión infernal.webp",
       "title": "Posesión infernal: El despertar",
       "genre": ["suspenso", "terror"]
+
     },
     {
       "id": 19,
       "poster_path": "/Rápidos y furiosos 9.webp",
       "title": "Rápidos y furiosos 9",
       "genre": ["acción", "aventura", "crimen"]
+
     },
     {
       "id": 21,
       "poster_path": "/Rápidos y furiosos X.webp",
       "title": "Rápidos y furiosos 10",
-      "genre": ["acción", "aventura", "crimen", "recientes"]
+      "genre": ["acción", "aventura", "crimen", "recientes"],
+      "carruselImg": "/rapidos 10.png"
+
     },
     {
       "id": 14,
       "poster_path": "/Shan Chi.webp",
       "title": "Shang Chi: La leyenda de los 10 anillos",
       "genre": ["acción", "aventura", "fantasía"]
+
     },
     {
       "id": 15,
       "poster_path": "/Spiderman No Way Home.webp",
       "title": "Spiderman: No Way Home",
       "genre": ["acción", "aventura", "ciencia ficción"]
+
     },
     {
       "id": 23,
       "poster_path": "/Super Mario Bros.webp",
       "title": "Súper Mario Bros. La película",
       "genre": ["animación", "familia", "aventura", "fantasía", "comedia"]
+
     },
     {
       "id": 22,
       "poster_path": "/Tin & Tina.webp",
       "title": "Tin & Tina",
       "genre": ["terror", "suspenso", "recientes"]
+
     },
     {
       "id": 25,
@@ -154,6 +178,7 @@
       "poster_path": "/Iron Man 1.webp",
       "title": "Iron Man",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 26,
@@ -162,6 +187,7 @@
       "poster_path": "/El increible Hulk.webp",
       "title": "El incríble Hulk",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 27,
@@ -170,6 +196,7 @@
       "poster_path": "/Iron Man 2.webp",
       "title": "Iron Man 2",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 28,
@@ -178,6 +205,7 @@
       "poster_path": "/Thor.webp",
       "title": "Thor",
       "genre": ["acción", "aventura", "fantasía", "marvel"]
+
     },
     {
       "id": 29,
@@ -186,6 +214,7 @@
       "poster_path": "/Capitan America 1.webp",
       "title": "Capitán América: El primer vengador",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 30,
@@ -194,6 +223,7 @@
       "poster_path": "/Los Vengadores 11.webp",
       "title": "Los vengadores",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+ 
     },
     {
       "id": 31,
@@ -202,6 +232,7 @@
       "poster_path": "/Iron Man 33.webp",
       "title": "Iron Man 3",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 32,
@@ -210,12 +241,14 @@
       "poster_path": "/Thor Mundo Oscuro 1.webp",
       "title": "Thor: Un mundo oscuro",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 33,
       "poster_path": "/Capitan America 2.webp",
       "title": "Capitán América: El soldado del invierno",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 34,
@@ -224,6 +257,7 @@
       "poster_path": "/Guardianes de la galaxia 1.webp",
       "title": "Guardianes de la Galaxia Vol.1",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 35,
@@ -232,6 +266,7 @@
       "poster_path": "/Los vengadores 2.webp",
       "title": "Los vengadores: La era de Ultrón",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 36,
@@ -240,6 +275,7 @@
       "poster_path": "/Ant Man 1.webp",
       "title": "Ant-Man",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+ 
     },
     {
       "id": 37,
@@ -248,6 +284,7 @@
       "poster_path": "/Capitan America 3.webp",
       "title": "Capitán América: Civil War",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 38,
@@ -256,6 +293,7 @@
       "poster_path": "/Dr Strange 1.webp",
       "title": "Dr. Strange: Hechicero supremo",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 39,
@@ -264,14 +302,15 @@
       "poster_path": "/Guardianes de la galaxia 22.webp",
       "title": "Guardianes de la Galaxia Vol. 2",
       "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+
     },
     {
       "id": 40,
       "original_language": "en",
       "original_title": "",
       "poster_path": "/Spiderman 1.webp",
-      "title": "Spiderman: Homecoming",
-      "genre": ["acción", "ciencia ficción", "aventura", "marvel"]
+      "title": "Spiderman: Homecoming"
+
     },
     {
       "id": 41,
@@ -324,6 +363,7 @@
       "poster_path": "/Elvis.webp",
       "title": "Elvis",
       "genre": ["drama", "música", "historia"]
+      
     },
     {
       "id": 48,
@@ -331,24 +371,29 @@
       "original_title": "",
       "poster_path": "/smile1.webp",
       "title": "Smile",
-      "genre": ["terror", "misterio", "suspenso", "recientes"]
+      "genre": ["terror", "misterio", "suspenso", "recientes"],
+      "carruselImg": "/Smile.png"
     },
     {
       "id": 49,
       "poster_path": "/Palmer.webp",
       "title": "Palmer",
-      "genre": ["drama", "recientes"]
+      "genre": ["drama", "recientes"],
+      "carruselImg": "/Palmer.png"
     },
     {
       "id": 50,
       "poster_path": "/Creed3.webp",
       "title": "Creed III",
-      "genre": ["drama", "acción", "recientes"]
+      "genre": ["drama", "acción", "recientes"],
+      
+      "carruselImg": "/Creed 3.png"
     },
     {
       "id": 51,
       "poster_path": "/Misión de rescate 2.webp",
       "title": "Misión de rescate 2",
-      "genre": ["suspenso", "acción", "recientes"]
+      "genre": ["suspenso", "acción", "recientes"],
+      "carruselImg": "/Mision de rescate 2.png"
     }
   ]

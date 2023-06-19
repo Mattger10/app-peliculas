@@ -28,6 +28,7 @@ export function NavBar() {
             style={{ fontFamily: "HighVoltage Heavy Rough" }}
             className={styles.a}
             to="/"
+            onClick={() => setClicked(false)}
           >
             PELÍCULAS
           </Link>
@@ -35,6 +36,7 @@ export function NavBar() {
             style={{ fontFamily: "HighVoltage Heavy Rough" }}
             className={styles.a}
             to="/series"
+            onClick={() => setClicked(false)}
           >
             SERIES
           </Link>
