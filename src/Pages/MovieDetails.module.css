@@ -2,11 +2,42 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 0;
+  margin-top: 4rem;
+}
+
+.pAtras{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 0.4rem;
+}
+
+.buttonAtras{
+  font-family: "Ropa Sans", sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border: 1px solid #0e1822;
+  padding: 0.2rem;
+  background-color: #0e1822;
+  border-radius: 5px;
+  margin-top: 2rem;
+  width: 5rem;
+  height: 2rem;
+}
+
+.buttonAtras:hover {
+  background-color: #00aaf8;
 }
 
 .column {
   max-width: 800px;
+}
+
+.column p{
+  font-family: "Ropa Sans", sans-serif;
 }
 
 .movieImage {
@@ -30,12 +61,14 @@
 }
 
 .firstItem {
+  font-family: "Ropa Sans", sans-serif;
   margin-top: 0;
 }
 
 .description {
   text-align: justify;
   margin-bottom: 3rem;
+  font-family: "Ropa Sans", sans-serif;
 }
 
 .youtubeLogo {
@@ -188,7 +221,7 @@
   background: none;
   font-size: 20px;
   font-weight: bold;
-  margin-top: -2.4rem;
+  margin-top: -2.1rem;
   margin-left: 2.5rem;
   cursor: pointer;
 }
@@ -212,6 +245,18 @@
 } */
 
 @media (max-width: 768px) {
+
+  .pAtras{
+    margin-top: 0rem;
+    font-size: 16px;
+    }
+
+  .buttonAtras{
+    margin-top: -82rem;
+    margin-left: 0.5rem;
+    width: 5rem;
+    height: 1rem;
+  }
 
   .backgroundImageMobile {
     

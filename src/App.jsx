@@ -17,12 +17,11 @@ export function App() {
   };
 
   return (
+      <Router>
     <div className={darkMode ? styles.darkApp : styles.app}>
       <div className={styles.navBar}>
       <NavBar/>
-
       </div>
-      <Router>
         <header className={styles.centerContainer}>
           {/* <Link to="/" >
             <h1
@@ -65,7 +64,7 @@ export function App() {
             <Route exact path="/" element={<LandingPage />} />
           </Routes>
         </main>
-      </Router>
     </div>
+      </Router>
   );
 }

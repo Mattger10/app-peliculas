@@ -5,16 +5,18 @@ import styles from "./MovieDetails.module.css";
 import { Spinner } from "../Components/Spinner";
 import youtube from "../assets/logoyoutube.webp";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import { useMediaQuery } from 'react-responsive';
-
+import { useMediaQuery } from "react-responsive";
+import { Search } from "../Components/Search";
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
 export function MovieDetails() {
   const { movieId } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isTrailerPlaying, setIsTrailerPlaying] = useState(false);
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
-
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const handlePlayTrailer = () => {
     setIsTrailerPlaying(true);
@@ -50,7 +52,7 @@ export function MovieDetails() {
   const linkStream = selectedMovie.linkStream;
   const imageStream = selectedMovie.imageStream;
   const backgroundImage = selectedMovie.backgroundImage;
-  const backgroundImageMobile = selectedMovie.backgroundImageMobile
+  const backgroundImageMobile = selectedMovie.backgroundImageMobile;
 
   let streamText;
   if (!linkStream && !imageStream) {
@@ -84,23 +86,19 @@ export function MovieDetails() {
         isTrailerPlaying ? styles.darkBackground : ""
       }`}
     >
-
-
       <div
-  className={`${styles.backgroundImage} ${
-    isMobile ? styles.backgroundImageMobile : styles.hideBackgroundImage
-  }`}
->
-  <img
-    className={`${styles.backgroundImage} ${
-      isMobile ? styles.backgroundImageMobile : styles.hideBackgroundImage
-    }`}
-    src={isMobile ? backgroundImageMobile : backgroundImage}
-    alt=""
-  />
-</div>
-
-
+        className={`${styles.backgroundImage} ${
+          isMobile ? styles.backgroundImageMobile : styles.hideBackgroundImage
+        }`}
+      >
+        <img
+          className={`${styles.backgroundImage} ${
+            isMobile ? styles.backgroundImageMobile : styles.hideBackgroundImage
+          }`}
+          src={isMobile ? backgroundImageMobile : backgroundImage}
+          alt=""
+        />
+      </div>
 
       <div className={styles.containerStream}>
         <img
@@ -157,6 +155,12 @@ export function MovieDetails() {
               Reproducir trailer
             </p>
           </div>
+            <div className={styles.buttonAtras}>
+              
+              <Link to="/">
+                <p className={styles.pAtras}>Volver</p>
+              </Link>
+            </div>
           <div
             className={`${styles.containerModal} ${
               isModalOpen ? styles.visible : ""

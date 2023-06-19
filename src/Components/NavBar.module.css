@@ -6,15 +6,22 @@
   font-style: normal;
 }
 
+.logo{
+width: 8rem;
+margin-top: 0.8rem;
+}
+
 .NavContainer {
     padding: .4rem;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 3.5rem;
 }
 
 .h2 {
+  font-size: 2rem;
     color: white;
     font-weight: bold;
     margin-left: 0.5rem;
@@ -25,6 +32,10 @@
     text-decoration: none;
     margin-right: 1rem;
     display: block;
+}
+
+.a:hover {
+  color: #00aaf8;
 }
 
 .links {
@@ -42,7 +53,7 @@
     position: absolute;
     margin-left: 6rem;
     margin-right: auto;
-    top: 12%;
+    top: 9.5%;
     left: 0;
     right: 0;
     text-align: center;
@@ -51,8 +62,12 @@
 
   .linksActive a {
     position: relative;
-    font-size: 25px;
-    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 8rem;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    margin-left: 8.5rem;
     color: rgb(255, 255, 255);
     z-index: 10;
   }
@@ -62,21 +77,35 @@
     background-color: #464545;
     top: -1000px;
     right: -1000px;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 18%;
     z-index: 9;
-    transition: all .1s ease;
+    transition: all .1s ease-in;
   }
 
   .active {
-    top: 5.6rem;
+    top: 4.1rem;
     right: 0;
-    width: 50%;
-    height: 18%;
-    
+    width: 40%;
+    height: 12%;
   }
 
 @media (min-width: 768px) {
+
+  .logo{
+    width: 10rem;
+    margin-top: 0.6rem;
+  }
+
+  .NavContainer {
+    padding: 1rem;
+    background-color: #333;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
   .burguer {
     display: none;
   }
@@ -84,7 +113,7 @@
   .links {
     position: initial;
     margin: 0;
-    margin-right: 15rem;
+    margin-right: 20rem;
   }
  .h2 {
   margin-left: 8.5rem;
@@ -98,4 +127,23 @@
   font-size: 2rem;
   display: inline;
 }
+
+.BgDiv {
+  position: absolute;
+  background-color: #464545;
+  top: -1000px;
+  right: -1000px;
+  width: 50%;
+  height: 18%;
+  z-index: 9;
+  transition: all .1s ease-in;
+}
+
+.active {
+  top: 4.1rem;
+  right: 0;
+  width: 50%;
+  height: 18%;
+}
+
 }

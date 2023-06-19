@@ -1,7 +1,6 @@
 import { MoviesGrid } from "../Components/MoviesGrid";
 import { Search } from "../Components/Search";
 import { useQuery } from "../hooks/useQuery";
-import { SeriesGrid } from "../Series/SeriesGrid";
 
 
 
