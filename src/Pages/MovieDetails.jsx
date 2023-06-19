@@ -156,7 +156,6 @@ export function MovieDetails() {
             </p>
           </div>
             <div className={styles.buttonAtras}>
-              
               <Link to="/">
                 <p className={styles.pAtras}>Volver</p>
               </Link>
