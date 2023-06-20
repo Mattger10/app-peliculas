@@ -76,7 +76,7 @@
       "poster_path": "/La chica salvaje.webp",
       "title": "La chica salvaje",
       "genre": ["misterio", "drama", "suspenso", "recientes"],
-      "carruselImg": "/La chica salvaje.png"
+      "carruselImg": "/La chica salvaje carrusel.webp"
 
     },
     {
@@ -140,7 +140,7 @@
       "poster_path": "/Rápidos y furiosos X.webp",
       "title": "Rápidos y furiosos 10",
       "genre": ["acción", "aventura", "crimen", "recientes"],
-      "carruselImg": "/rapidos 10.png"
+      "carruselImg": "/rapidos 10.webp"
 
     },
     {
@@ -372,14 +372,14 @@
       "poster_path": "/smile1.webp",
       "title": "Smile",
       "genre": ["terror", "misterio", "suspenso", "recientes"],
-      "carruselImg": "/Smile.png"
+      "carruselImg": "/Smile carrusel.webp"
     },
     {
       "id": 49,
       "poster_path": "/Palmer.webp",
       "title": "Palmer",
       "genre": ["drama", "recientes"],
-      "carruselImg": "/Palmer.png"
+      "carruselImg": "/Palmer carrusel.webp"
     },
     {
       "id": 50,
@@ -387,13 +387,13 @@
       "title": "Creed III",
       "genre": ["drama", "acción", "recientes"],
       
-      "carruselImg": "/Creed 3.png"
+      "carruselImg": "/Creed 3.webp"
     },
     {
       "id": 51,
       "poster_path": "/Misión de rescate 2.webp",
       "title": "Misión de rescate 2",
       "genre": ["suspenso", "acción", "recientes"],
-      "carruselImg": "/Mision de rescate 2.png"
+      "carruselImg": "/Mision de rescate 2.webp"
     }
   ]

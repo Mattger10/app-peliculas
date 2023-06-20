@@ -17,17 +17,18 @@
   },
   {
     "serieId": 2,
-    "title": "",
-    "poster_path": "",
+    "title": "The Crowded Room",
+    "poster_path": "/The Crowded Room 2.webp",
     "genres": [
-      { "name": "" },
-      { "name": "" }
+      { "name": "Drama" },
+      { "name": "Misterio" },
+      { "name": "Crimen." }
     ],
-    "released": "",
-    "overview": "", 
-    "trailerUrl": "",
-    "linkStream": "",
-    "imageStream": "",
-    "backgroundImage": ""
+    "released": "09/06/2023",
+    "overview": "Un thriller psicológico ambientado en Manhattan en el verano de 1979, cuando arrestan a un joven por un crimen espeluznante y una insólita investigadora debe resolver el misterio que se esconde tras él.", 
+    "trailerUrl": "https://www.youtube.com/embed/nWFP8GaH8gE",
+    "linkStream": "https://tv.apple.com/ar/episode/exodus/umc.cmc.q2un5rf5n00t4ij1ovx9soo?playableId=tvs.sbd.4000%3AA0010901002",
+    "imageStream": "/Apple.svg",
+    "backgroundImage": "/The Crowded Room bg.webp"
   }
 ]

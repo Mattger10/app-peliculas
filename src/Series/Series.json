@@ -4,5 +4,11 @@
       "poster_path": "/SweetTooth2.webp",
       "title": "Sweet Tooth: Temporada 2",
       "genre": ["drama", "ciencia ficción", "fantasía"]
+    },
+    {
+      "id": 2,
+      "poster_path": "/The Crowded Room.webp",
+      "title": "The Crowded Room",
+      "genre": ["drama", "crimen", "misterio", "reciente"]
     }
   ]
