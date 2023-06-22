@@ -21,14 +21,14 @@
     border-radius: 8px;
     padding: 5px 30px 5px 10px;
     font-size: 1.2rem;
-    border: 1px solid rgba(0, 0, 0, 0.87);
+    border: 1px solid #0e1822;
 }
 
 .searchInput:focus,
 .searchButton:focus {
     outline: none;
-    border: 1px solid blue;
-    box-shadow: 0 0 5px rgb(0, 4, 255);
+    border: 1px solid #00aaf8;
+    box-shadow: 0 0 5px #00aaf8;
 }
 
 @media (max-width: 560px) { 

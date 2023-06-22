@@ -6,7 +6,7 @@ import { Spinner } from "./Spinner";
 import { useQuery } from "../hooks/useQuery";
 import { Empty } from "./Empty";
 
-export function MoviesGrid() {
+export function MoviesGrid({darkMode}) {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedGenre, setSelectedGenre] = useState("");
@@ -83,23 +83,23 @@ export function MoviesGrid() {
   return (
     <div>
       <div className={styles.buttonBorders}>
-      <button className={styles.button} onClick={() => {setSelectedGenre("");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Todos</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("recientes");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Recientes</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("acción");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Acción</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("aventura");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Aventura</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("animación");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Animación</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("comedia");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Comedia</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("crimen");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Crimen</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("drama");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Drama</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("fantasía");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Fantasía</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("familia");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Familia</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("marvel");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Marvel</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("misterio");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Misterio</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("música");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Música</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("romance");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Romance</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("suspenso");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Suspenso</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("terror");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Terror</button>
-      <button className={styles.button} onClick={() => {setSelectedGenre("ciencia ficción");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Todos</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("recientes");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Recientes</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("acción");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Acción</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("aventura");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Aventura</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("animación");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Animación</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("comedia");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Comedia</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("crimen");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Crimen</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("drama");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Drama</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("fantasía");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Fantasía</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("familia");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Familia</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("marvel");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Marvel</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("misterio");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Misterio</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("música");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Música</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("romance");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Romance</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("suspenso");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Suspenso</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("terror");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Terror</button>
+      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("ciencia ficción");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>
         Ciencia ficción
       </button>
       </div>

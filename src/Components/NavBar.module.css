@@ -1,11 +1,10 @@
 @font-face {
   font-family: "HighVoltage Heavy Rough";
-  src: url("../assets/HighVoltage\ Heavy\ Rough.ttf") format("truetype");
+  src: url("../assets/Modern\ Age.ttf") format("truetype");
   /* Agrega más formatos de archivo si es necesario */
   font-weight: normal;
   font-style: normal;
 }
-
 .logo{
 width: 8rem;
 margin-top: 0.8rem;
@@ -13,6 +12,15 @@ margin-top: 0.8rem;
 
 .NavContainer {
     padding: .4rem;
+    background-color: #00aaf8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+}
+
+.NavContainerDark {
+  padding: .4rem;
     background-color: #333;
     display: flex;
     align-items: center;
@@ -27,6 +35,17 @@ margin-top: 0.8rem;
     margin-left: 0.5rem;
 }
 
+.aDark {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 1rem;
+  display: block;
+}
+
+.aDark:hover{
+  color: #00aaf8;
+}
+
 .a {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -35,7 +54,7 @@ margin-top: 0.8rem;
 }
 
 .a:hover {
-  color: #00aaf8;
+  color: #0e1822;
 }
 
 .links {
@@ -53,8 +72,8 @@ margin-top: 0.8rem;
     position: absolute;
     margin-left: 6rem;
     margin-right: auto;
-    top: 9.5%;
-    left: 0;
+    top: 11%;
+    left: 1%;
     right: 0;
     text-align: center;
     transition: all .1s ease-in;
@@ -74,7 +93,7 @@ margin-top: 0.8rem;
 
   .BgDiv {
     position: absolute;
-    background-color: #464545;
+    background-color: #00aaf8;
     top: -1000px;
     right: -1000px;
     width: 50%;
@@ -83,14 +102,26 @@ margin-top: 0.8rem;
     transition: all .1s ease-in;
   }
 
+  .BgDivDark {
+    background-color: #333;
+  }
+
   .active {
-    top: 4.1rem;
+    top: 4.2rem;
     right: 0;
     width: 40%;
     height: 12%;
   }
 
 @media (min-width: 768px) {
+
+  @font-face {
+    font-family: "HighVoltage Heavy Rough";
+    src: url("../assets/Vampire\ Wars.ttf") format("truetype");
+    /* Agrega más formatos de archivo si es necesario */
+    font-weight: normal;
+    font-style: normal;
+  }
 
   .logo{
     width: 10rem;
@@ -99,7 +130,7 @@ margin-top: 0.8rem;
 
   .NavContainer {
     padding: 1rem;
-    background-color: #333;
+    background-color: #00aaf8;;
     height: 2rem;
     display: flex;
     align-items: center;
@@ -122,6 +153,14 @@ margin-top: 0.8rem;
 
  .a {
   color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 2rem;
+  display: inline;
+}
+
+.aDark {
+  color: #ffffff;
   text-decoration: none;
   margin-right: 1rem;
   font-size: 2rem;

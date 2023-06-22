@@ -8,8 +8,8 @@
 
 .buttonDark {
   position: absolute;
-  margin-left: 93rem;
-  margin-top: -5rem;
+  right: 10rem;
+  top: 0rem;
 }
 
 .label {
@@ -190,8 +190,8 @@ html {
 
   .buttonDark {
     position: absolute;
-    margin-left: 8rem;
-    margin-top: -5.5rem;
+    left: 15rem;
+    margin-top: 0.2rem;
   }
 
   .label {

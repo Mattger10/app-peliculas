@@ -13,6 +13,32 @@
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.05rem;
+  border: 1px solid #00aaf8;
+  padding: 0.8rem;
+  background-color: #00aaf8;
+  background-size: 200%;
+  background-position: 200%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, border, color;
+  position: relative;
+  z-index: 1;
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 5px;
+  width: calc(18% - 2.5rem);
+}
+
+.buttonDark {
+  font-family: "Ropa Sans", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
   border: 1px solid #0e1822;
   padding: 0.8rem;
   background-color: #0e1822;
@@ -36,8 +62,14 @@
   border: none;
   color: white;
   background-position: 40%;
-  background-color: #00aaf8;
+  background-color: #0e1822;
+}
+
+.buttonDark:hover {
+  border: 1px solid #00aaf8;
   color: white;
+  background-position: 40%;
+  background-color: #00aaf8;
 }
 
 .buttonBorders {
@@ -62,18 +94,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: -0.5rem;
-    margin-top: 1rem;
+    margin-top: -5.5rem;
   }
 
   .button {
     width: calc(42% - 2.5rem);
-  font-size: 12px;
-  font-weight: bold;
-  padding: 0.7rem;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  max-width: 30%;
-  margin-top: 0.2rem;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 30%;
+    margin-top: 0.2rem;
+  }
+
+  .buttonDark {
+    width: calc(42% - 2.5rem);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0.7rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 30%;
+    margin-top: 0.2rem;
   }
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Search } from "./Search";
 import logo  from "../assets/LogoMattger.png"
 
-export function NavBar() {
+export function NavBar({darkMode}) {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
@@ -14,7 +14,7 @@ export function NavBar() {
 
   return (
     <>
-      <nav className={styles.NavContainer}>
+      <nav className={darkMode? styles.NavContainerDark : styles.NavContainer}>
         <Link
           style={{ fontFamily: "HighVoltage Heavy Rough" }}
           className={styles.h2}
@@ -26,7 +26,7 @@ export function NavBar() {
         <div className={`${styles.links} ${clicked ? styles.linksActive : ""}`}>
           <Link
             style={{ fontFamily: "HighVoltage Heavy Rough" }}
-            className={styles.a}
+            className={darkMode ? styles.aDark : styles.a}
             to="/"
             onClick={() => setClicked(false)}
           >
@@ -34,7 +34,7 @@ export function NavBar() {
           </Link>
           <Link
             style={{ fontFamily: "HighVoltage Heavy Rough" }}
-            className={styles.a}
+            className={darkMode ? styles.aDark : styles.a}
             to="/series"
             onClick={() => setClicked(false)}
           >
@@ -45,11 +45,9 @@ export function NavBar() {
           <BurguerButton clicked={clicked} handleClick={handleClick} />
         </div>
         <div
-          className={`initial ${styles.BgDiv} ${clicked ? styles.active : ""}`}
+           className={`initial ${styles.BgDiv} ${clicked ? styles.active : ""} ${darkMode ? styles.BgDivDark : styles.BgDiv}`}
         ></div>
       </nav>
     </>
   );
 }
-
-// className={`${styles.links} ${clicked ? styles.active : ''}`}

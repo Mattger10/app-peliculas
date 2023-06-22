@@ -132,7 +132,7 @@ export function SerieDetails() {
           </p>
           <PlayCircleIcon fontSize="large" />
           <div>
-            <button
+            <p
               className={styles.verTrailerButton}
               onClick={() => {
                 setIsModalOpen(true);
@@ -140,7 +140,7 @@ export function SerieDetails() {
               }}
             >
               Reproducir trailer
-            </button>
+            </p>
           </div>
 
           {isModalOpen && (

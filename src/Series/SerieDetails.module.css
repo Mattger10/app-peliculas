@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 0;
+  margin-top: 4rem;
 }
 
 .column {
@@ -27,6 +27,7 @@
 
 .movieDetails {
   font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .firstItem {

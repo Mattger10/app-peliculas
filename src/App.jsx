@@ -7,42 +7,31 @@ import { SeriesGrid } from "./Series/SeriesGrid";
 import { SerieDetails } from "./Series/SerieDetails";
 import { Search } from "./Components/Search";
 import { NavBar } from "./Components/NavBar";
+import { Carrusel } from "./Components/Carrusel";
+import data from "./Components/Movies.json";
+import { MoviesGrid } from "./Components/MoviesGrid";
 
 export function App() {
   const [showSeriesGrid, setShowSeriesGrid] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
+  const mockImagenes = data;
+
   return (
       <Router>
     <div className={darkMode ? styles.darkApp : styles.app}>
       <div className={styles.navBar}>
-      <NavBar/>
+      <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+      
+      
       </div>
         <header className={styles.centerContainer}>
-          {/* <Link to="/" >
-            <h1
-              style={{ fontFamily: "HighVoltage Heavy Rough" }}
-              className={darkMode ? styles.title1Dark : styles.title1}
-            >
-              PELÍCULAS
-            </h1>
-          </Link>
-          <Link
-            to="/series"
-            onClick={() => setShowSeriesGrid(true)}
-            
-          >
-            <h1
-              style={{ fontFamily: "HighVoltage Heavy Rough" }}
-              className={darkMode ? styles.titleDark : styles.title}
-            >
-              SERIES
-            </h1>
-          </Link> */}
+
          
       <div className={styles.buttonDark}>
       <input className={styles.input} type="checkbox" id="darkmode-toggle" />
@@ -53,6 +42,14 @@ export function App() {
         </header>
         <main>
           <Routes>
+            <Route exact path="/" element={
+              <div>
+                <Search />
+            <Carrusel imagenes={mockImagenes} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+            <MoviesGrid darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+            <LandingPage />
+            </div>
+            } />
             <Route
               exact
               path="/movies/:movieId"
@@ -61,7 +58,6 @@ export function App() {
 
             <Route exact path="/series" element={<SeriesGrid />} />
             <Route exact path="/series/:serieId" element={<SerieDetails />} />
-            <Route exact path="/" element={<LandingPage />} />
           </Routes>
         </main>
     </div>

@@ -813,5 +813,21 @@
     "imageStream": "/netflix.svg",
     "backgroundImage": "/Mision de rescate 2 bg.webp",
     "backgroundImageMobile": "/prueba.jpg"
+  },
+  {
+    "movieId": 52,
+    "title": "La Morgue",
+    "poster_path": "/La morgue.webp",
+    "genres": [
+      { "name": "Terror" },
+      { "name": "Misterio" }
+    ],
+    "released": "21/12/2016",
+    "overview": "El dueño de una funeraria de una pequeña localidad y su hijo, que trabaja con él, reciben un día el cadáver de la víctima de un misterioso crimen: una bella joven que no tiene ninguna causa aparente de muerte. Ambos intentarán desvelar los intrigantes motivos del fallecimiento de la joven.",
+    "trailerUrl": "https://www.youtube.com/embed/kNMKgYgz-0Q",
+    "linkStream": "https://play.hbomax.com/page/urn:hbo:page:GYgbcCwu3B75mkAEAAAd3:type:feature?source=googleHBOMAX&action=open",
+    "imageStream": "/hbomax.svg",
+    "backgroundImage": "/La morgue bg.webp",
+    "backgroundImageMobile": "/La morgue mobile.webp"
   }
 ]

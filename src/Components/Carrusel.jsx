@@ -3,7 +3,7 @@ import styles from "./Carrusel.module.css";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
-export function Carrusel({ imagenes }) {
+export function Carrusel({ imagenes, darkMode }) {
   const [imagenActual, setImagenActual] = useState(0);
   const imagenesFiltradas = imagenes.filter(
     (imagen) => imagen.carruselImg !== undefined
@@ -44,7 +44,7 @@ export function Carrusel({ imagenes }) {
 
   return (
     <div className={styles.container}>
-      <button className={styles.buttonBack} onClick={anteriorImagen}>
+      <button className={darkMode ? styles.buttonBackDark : styles.buttonBack} onClick={anteriorImagen}>
         <ArrowBackIosNewIcon fontSize="small" />
       </button>
       {imagenesFiltradas.map((imagen, index) => (
@@ -58,14 +58,14 @@ export function Carrusel({ imagenes }) {
         >
           {imagenActual === index && (
             <img
-              className={styles.image}
+              className={darkMode ? styles.imageDark : styles.image}
               src={imagen.carruselImg}
               alt="imagen"
             />
           )}
         </div>
       ))}
-      <button className={styles.buttonNext} onClick={siguienteImagen}>
+      <button className={darkMode ? styles.buttonNextDark : styles.buttonNext} onClick={siguienteImagen}>
         <ArrowForwardIosIcon fontSize="small" />
       </button>
     </div>
