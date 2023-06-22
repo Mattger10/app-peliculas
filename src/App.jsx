@@ -10,6 +10,7 @@ import { NavBar } from "./Components/NavBar";
 import { Carrusel } from "./Components/Carrusel";
 import data from "./Components/Movies.json";
 import { MoviesGrid } from "./Components/MoviesGrid";
+import MovieForm from "./Components/MovieForm";
 
 export function App() {
   const [showSeriesGrid, setShowSeriesGrid] = useState(false);
@@ -45,7 +46,7 @@ export function App() {
             <Route exact path="/" element={
               <div>
                 <Search />
-            <Carrusel imagenes={mockImagenes} darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+            <Carrusel imagenes={mockImagenes} darkMode={darkMode} toggleDarkMode={toggleDarkMode}  movie={mockImagenes.find((movie) => movie.id )}/>
             <MoviesGrid darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
             <LandingPage />
             </div>
@@ -58,6 +59,7 @@ export function App() {
 
             <Route exact path="/series" element={<SeriesGrid />} />
             <Route exact path="/series/:serieId" element={<SerieDetails />} />
+            {/* <Route exact path="/form" element={<MovieForm />}/> */}
           </Routes>
         </main>
     </div>

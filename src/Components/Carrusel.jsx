@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Carrusel.module.css";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
-export function Carrusel({ imagenes, darkMode }) {
+export function Carrusel({ imagenes, darkMode, movie }) {
   const [imagenActual, setImagenActual] = useState(0);
   const imagenesFiltradas = imagenes.filter(
     (imagen) => imagen.carruselImg !== undefined
@@ -57,11 +58,13 @@ export function Carrusel({ imagenes, darkMode }) {
           key={index}
         >
           {imagenActual === index && (
+            <Link to={"/movies/" + imagen.id}>
             <img
               className={darkMode ? styles.imageDark : styles.image}
               src={imagen.carruselImg}
               alt="imagen"
             />
+            </Link>
           )}
         </div>
       ))}

@@ -40,6 +40,14 @@ export function NavBar({darkMode}) {
           >
             SERIES
           </Link>
+          {/* <Link
+            style={{ fontFamily: "HighVoltage Heavy Rough" }}
+            className={darkMode ? styles.aDark : styles.a}
+            to="/form"
+            onClick={() => setClicked(false)}
+          >
+            querés?
+          </Link> */}
         </div>
         <div className={styles.burguer}>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
