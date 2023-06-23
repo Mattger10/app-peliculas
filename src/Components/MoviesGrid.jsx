@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import { Spinner } from "./Spinner";
 import { useQuery } from "../hooks/useQuery";
 import { Empty } from "./Empty";
+import { Paginado } from "./Paginado";
 
 export function MoviesGrid({darkMode}) {
   const [filteredMovies, setFilteredMovies] = useState([]);
@@ -12,7 +13,17 @@ export function MoviesGrid({darkMode}) {
   const [selectedGenre, setSelectedGenre] = useState("");
   const [search, setSearch] = useState("");
   const moviesGridRef = useRef(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 18; // Ajusta la cantidad de elementos por página según tus necesidades
+  const indexOfLastItem = currentPage * itemsPerPage;
+const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+const currentItems = filteredMovies.slice(indexOfFirstItem, indexOfLastItem);
 
+
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   const query = useQuery();
   const querySearch = query.get("search");
@@ -83,7 +94,8 @@ export function MoviesGrid({darkMode}) {
   return (
     <div>
       <div className={styles.buttonBorders}>
-      <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Todos</button>
+      <button className={darkMode ? styles.buttonDark : styles.button} onClick={() => {window.location.reload();}}>Todos</button>
+
       <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("recientes");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Recientes</button>
       <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("acción");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Acción</button>
       <button className={darkMode? styles.buttonDark : styles.button} onClick={() => {setSelectedGenre("aventura");moviesGridRef.current.scrollIntoView({ behavior: "smooth" });}}>Aventura</button>
@@ -103,12 +115,24 @@ export function MoviesGrid({darkMode}) {
         Ciencia ficción
       </button>
       </div>
-
+<div className={styles.prueba}>
       <ul ref={moviesGridRef} className={styles.moviesGrid}>
-        {filteredMovies.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
-        ))}
-      </ul>
+  {currentItems.map((movie) => (
+    <MovieCard key={movie.id} movie={movie} />
+  ))}
+</ul>
+
+</div>
+
+<div className={styles.paginado}>
+      <Paginado
+        currentPage={currentPage}
+        itemsPerPage={itemsPerPage}
+        totalItems={filteredMovies.length}
+        onPageChange={handlePageChange}
+        darkMode={darkMode}
+      />
+</div>
     </div>
   );
 }

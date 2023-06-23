@@ -11,6 +11,7 @@ import { Carrusel } from "./Components/Carrusel";
 import data from "./Components/Movies.json";
 import { MoviesGrid } from "./Components/MoviesGrid";
 import MovieForm from "./Components/MovieForm";
+import { Paginado } from "./Components/Paginado";
 
 export function App() {
   const [showSeriesGrid, setShowSeriesGrid] = useState(false);

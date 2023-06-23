@@ -6,6 +6,7 @@ import data from "../Components/Movies.json";
 import { useState } from "react";
 
 
+
 export function LandingPage () {
     const query = useQuery();
     const search = query.get("search");

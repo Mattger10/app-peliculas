@@ -78,6 +78,17 @@
   margin-top: 2rem;
 }
 
+.paginado {
+  margin-top: -10rem;
+ 
+}
+
+.prueba{
+height: 100rem;
+}
+
+
+
 @media (max-width: 560px) {
   .moviesGrid {
     display: grid;
@@ -120,4 +131,5 @@
     max-width: 30%;
     margin-top: 0.2rem;
   }
+
 }

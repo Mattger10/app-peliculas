@@ -5,6 +5,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 .logo{
 width: 8rem;
 margin-top: 0.8rem;
@@ -122,6 +124,14 @@ margin-top: 0.8rem;
     font-weight: normal;
     font-style: normal;
   }
+
+  .navFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
 
   .logo{
     width: 10rem;

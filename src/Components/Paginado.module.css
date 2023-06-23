@@ -1,0 +1,89 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3.5rem;
+}
+
+.buttonAnterior {
+    border: none;
+    background-color: #00aaf8;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonAnterior:hover {
+    background-color: #0e1822;
+}
+
+.buttonNumber {
+    border: none;
+    background-color: #00aaf8;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonNumber:hover {
+    background-color: #0e1822;
+}
+
+  .activePage{
+    border: none;
+    background-color: #0e1822;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonAnteriorDark {
+    border: none;
+    background-color: #0e1822;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonAnteriorDark:hover {
+    background-color: #00aaf8;
+  }
+
+  .buttonNumberDark {
+    border: none;
+    background-color: #0e1822;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonNumberDark:hover {
+    background-color: #00aaf8;
+  }
+
+  @media (max-width: 560px) {
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 41rem;
+        margin-bottom: 3rem;
+    }
+   }
